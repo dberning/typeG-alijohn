@@ -392,11 +392,26 @@ h4.project-title {
 	font-weight: 700;
 }
 
+.home-logo {
+	margin-left: calc(50% - 51px);
+	height: 100%;
+}
+
+#home-logo-image {
+	margin: 10% 0px;
+	width: 102px;
+	height: 100%;
+	background-image: url('images/agc-icon_grn.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1000;
+}
+
 @media only screen and (max-width: 768px) {
 
 	h1,
 	.title-xlarge {
-		font-size: 4rem;
+		font-size: 1rem;
 	}
 
 	h2,
@@ -432,8 +447,8 @@ h4.project-title {
 
 	.tms-caption.title-xlarge,
 	.tmp-content .title-xlarge {
-		font-size: 4.5rem;
-		line-height: 4.5rem;
+		font-size: 2rem;
+		line-height: normal;
 	}
 
 	/* Lead */
@@ -474,6 +489,21 @@ h4.project-title {
 	.fullscreen-section .background-on-mobile h5,
 	.fullscreen-section .background-on-mobile h6 {
 		color: #000 !important;
+	}
+
+	.home-logo {
+		margin-left: calc(50% - 25px);
+		height: 51px;
+	}
+
+	#home-logo-image {
+		margin: 10% 0px;
+		width: 50px;
+		height: 100%;
+		background-image: url('images/agc-icon_grn-small.png');
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1000;
 	}
 }
 
