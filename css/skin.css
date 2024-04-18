@@ -279,11 +279,11 @@ h4.project-title {
 
 /* Rollover */
 .overlay-info>span>span {
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
-	color: #000;
+	color: #ffffff;
 }
 
 /* Pricing Table Title */
@@ -420,6 +420,15 @@ h4.project-title {
 	z-index: 1000;
 }
 
+.case-studies-header {
+	font-weight: 600;
+	border-bottom: solid 3px #A6CE39;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-size: medium;
+	padding-bottom: 5px;
+}
+
 @media only screen and (max-width: 768px) {
 
 	h1,
@@ -517,6 +526,15 @@ h4.project-title {
 		background-repeat: no-repeat;
 		position: relative;
 		z-index: 1000;
+	}
+
+	.case-studies-header {
+		font-weight: 600;
+		border-bottom: solid 3px #A6CE39;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: medium;
+		padding-bottom: 5px;
 	}
 }
 
