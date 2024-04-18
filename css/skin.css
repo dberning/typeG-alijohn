@@ -2619,8 +2619,8 @@ body,
 }
 
 .grid-filter-menu a.active {
-	color: #ff4556;
-	border-bottom: none;
+	border-bottom: solid 1px #A6CE39;
+	;
 }
 
 /* Color Swatch */
