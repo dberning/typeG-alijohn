@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience</title>
+    <link rel="stylesheet" href="css/core.min.css" />
+    <link rel="stylesheet" href="css/skin.css" />
+    <link rel="stylesheet" href="css/timber.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <style>
+        main {
+            background: #f0f0f0;
+            padding-top: 80px
+        }
+        .skills-section {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #f8f8f8;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            padding: 32px 24px;
+        }
+        .accordion {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-title {
+            background: #A6CE39;
+            color: #fff;
+            cursor: pointer;
+            padding: 16px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .accordion-title:hover {
+            background: #8bb02e;
+        }
+        .accordion-content {
+            display: none;
+            background: #fff;
+            color: #333;
+            padding: 16px 20px;
+            font-size: 1rem;
+        }
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+        :root {
+          --active-bg: #A4CC39;
+          --active-bg-hover: #c6CE39;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 40px; width:100%">
+            <div id="custom-slider-experience" style="width: 100%; max-width: 1280px;"></div>
+            <div style="display: flex; gap:10rem">
+              <button class="button">
+                <a href="path/to/resume.pdf" download style="margin-left: 10px;">Download Resume</a>
+              </button>
+              <button>
+                <a href="path/to/linkedin" style="margin-left: 10px;">Linkedin</a>
+              </button>
+
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 style="text-align:center;margin-bottom:24px;">Skills</h2>
+            <div class="accordion" id="skills-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-title">Penetration Testing</div>
+                    <div class="accordion-content">Experienced in web, network, and application penetration testing using industry-standard tools and methodologies.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title">Security Architecture</div>
+                    <div class="accordion-content">Designing secure systems and networks, implementing defense-in-depth strategies, and reviewing cloud security postures.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title">Incident Response</div>
+                    <div class="accordion-content">Developing and executing incident response plans, conducting forensics, and leading post-incident reviews.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title">Security Training</div>
+                    <div class="accordion-content">Delivering security awareness and technical training to diverse audiences, from executives to engineers.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/timber.master.min.js"></script>
+    <script>
+        // Header/footer includes
+        fetch('components/header.html').then(r => r.text()).then(d => { document.getElementById('header-placeholder').innerHTML = d; });
+        fetch('components/footer.html').then(r => r.text()).then(d => { document.getElementById('footer-placeholder').innerHTML = d; });
+
+        //Slider initialization
+        fetch('components/slider.html')
+            .then(r => r.text())
+            .then(d => {
+                document.getElementById('custom-slider-experience').innerHTML = d;
+            });
+        // Accordion logic
+        document.querySelectorAll('.accordion-title').forEach(title => {
+            title.onclick = function() {
+                const item = this.parentElement;
+                item.classList.toggle('active');
+            };
+        });
+    </script>
+</body>
+</html>

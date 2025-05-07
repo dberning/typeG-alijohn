@@ -1,0 +1,50 @@
+<style>
+    swiper-container {
+      width: 100%;
+      height: auto;
+
+      &::part(button-next), &::part(button-prev) {
+        background-color: var(--active-bg);
+        padding: 15px 20px 15px 20px;
+      }
+      &::part(button-next):hover, &::part(button-prev):hover {
+        background-color: var(--active-bg-hover);
+      }
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 800px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+</style>
+
+<swiper-container
+  class="mySwiper"
+  navigation="true"
+  style="
+    --swiper-navigation-color: #FFFFFF;
+    --swiper-navigation-size: 25px;"
+>
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  <swiper-slide>Slide 4</swiper-slide>
+  <swiper-slide>Slide 5</swiper-slide>
+  <swiper-slide>Slide 6</swiper-slide>
+  <swiper-slide>Slide 7</swiper-slide>
+  <swiper-slide>Slide 8</swiper-slide>
+  <swiper-slide>Slide 9</swiper-slide>
+</swiper-container>
