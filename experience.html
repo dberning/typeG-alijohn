@@ -55,6 +55,18 @@
           --active-bg: #A4CC39;
           --active-bg-hover: #c6CE39;
         }
+
+        button {
+          background-color: var(--active-bg);
+          text-transform: uppercase;
+
+          > a {
+            color: #fff !important;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
     </style>
 </head>
 <body>
@@ -63,11 +75,11 @@
         <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 40px; width:100%">
             <div id="custom-slider-experience" style="width: 100%; max-width: 1280px;"></div>
             <div style="display: flex; gap:10rem">
-              <button class="button">
-                <a href="path/to/resume.pdf" download style="margin-left: 10px;">Download Resume</a>
+              <button>
+                <a href="path/to/resume.pdf" download>Download Resume</a>
               </button>
               <button>
-                <a href="path/to/linkedin" style="margin-left: 10px;">Linkedin</a>
+                <a href="path/to/linkedin">Linkedin</a>
               </button>
 
             </div>
