@@ -87,24 +87,7 @@
 
         <section class="skills-section">
             <h2 style="text-align:center;margin-bottom:24px;">Skills</h2>
-            <div class="accordion" id="skills-accordion">
-                <div class="accordion-item">
-                    <div class="accordion-title">Penetration Testing</div>
-                    <div class="accordion-content">Experienced in web, network, and application penetration testing using industry-standard tools and methodologies.</div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">Security Architecture</div>
-                    <div class="accordion-content">Designing secure systems and networks, implementing defense-in-depth strategies, and reviewing cloud security postures.</div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">Incident Response</div>
-                    <div class="accordion-content">Developing and executing incident response plans, conducting forensics, and leading post-incident reviews.</div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">Security Training</div>
-                    <div class="accordion-content">Delivering security awareness and technical training to diverse audiences, from executives to engineers.</div>
-                </div>
-            </div>
+            <div id="skills-accordion-placeholder"></div>
         </section>
     </main>
     <div id="footer-placeholder"></div>
@@ -121,13 +104,26 @@
             .then(d => {
                 document.getElementById('custom-slider-experience').innerHTML = d;
             });
-        // Accordion logic
-        document.querySelectorAll('.accordion-title').forEach(title => {
-            title.onclick = function() {
-                const item = this.parentElement;
-                item.classList.toggle('active');
-            };
-        });
+        // Accordion include
+        fetch('components/skills-accordion.html')
+            .then(r => r.text())
+            .then(d => {
+                document.getElementById('skills-accordion-placeholder').innerHTML = d;
+                // Accordion logic
+                document.querySelectorAll('.accordion-title').forEach(title => {
+                    title.onclick = function() {
+                      const item = this.parentElement;
+                      var content = item.getElementsByClassName('accordion-content')[0];
+                      var isOpen = window.getComputedStyle(content).display !== 'none';
+
+                      if (!isOpen) {
+                        content.style.display = 'block';
+                      } else {
+                        content.style.display = 'none';
+                      }
+                    };
+                });
+            });
     </script>
 </body>
 </html>
