@@ -1,0 +1,40 @@
+.custom-layout .custom-layout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.image-section img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.text-section {
+  max-width: 600px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.arrow {
+  background-color: #A6CE39;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow-left {
+  margin-right: 1rem;
+}
+
+.arrow-right {
+  margin-left: 1rem;
+}
