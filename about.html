@@ -664,6 +664,37 @@
 		});
 	</script>
 
+	<script>
+		$(document).ready(function () {
+			// Hide all items initially
+			$('.custom-layout').hide();
+
+			// Show only present by default
+			$('.custom-layout.present').show();
+
+			// Function to show filter
+			function showFilter(filterClass) {
+				$('.custom-layout').hide();
+				$(filterClass).show();
+			}
+
+			// Filter click behavior (menu)
+			$('[data-filter]').click(function (e) {
+				e.preventDefault();
+				const filter = $(this).data('filter');
+				showFilter(filter);
+			});
+
+			// Arrow toggle logic
+			$('.arrow').click(function () {
+				if ($('.custom-layout.present').is(':visible')) {
+					showFilter('.past');
+				} else {
+					showFilter('.present');
+				}
+			});
+		});
+	</script>
 
 </body>
 
