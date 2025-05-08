@@ -446,7 +446,7 @@
 							<ul class="gothic">
 								<!-- <li><a class="active" href="#" data-filter="*" style="font-size: 2rem">2001-2024</a></li> -->
 								<li><a href="#" data-filter=".past" style="font-size: 2rem">2001-2024</a></li>
-								<li><a href="#" data-filter=".present" style="font-size: 2rem">Present</a></li>
+								<li><a href="#" data-filter=".present" style="font-size: 2rem" class="active">Present</a></li>
 								<!-- <li><a href="#" data-filter=".cdc">Case Study 3</a></li>
 								<li><a href="#" data-filter=".wrccdc">Case Study 4</a></li>
 								<li><a href="#" data-filter=".offensive-sec">Case Study 5</a></li>
@@ -666,32 +666,31 @@
 
 	<script>
 		$(document).ready(function () {
-			// Hide all items initially
+			// Hide all initially
 			$('.custom-layout').hide();
-
-			// Show only present by default
 			$('.custom-layout.present').show();
 
-			// Function to show filter
 			function showFilter(filterClass) {
+				// Show/hide content
 				$('.custom-layout').hide();
 				$(filterClass).show();
+
+				// Update active class on filter menu
+				$('[data-filter]').removeClass('active');
+				$(`[data-filter="${filterClass}"]`).addClass('active');
 			}
 
-			// Filter click behavior (menu)
+			// Filter menu click
 			$('[data-filter]').click(function (e) {
 				e.preventDefault();
 				const filter = $(this).data('filter');
 				showFilter(filter);
 			});
 
-			// Arrow toggle logic
+			// Arrow click toggles between views
 			$('.arrow').click(function () {
-				if ($('.custom-layout.present').is(':visible')) {
-					showFilter('.past');
-				} else {
-					showFilter('.present');
-				}
+				const nextFilter = $('.custom-layout.present').is(':visible') ? '.past' : '.present';
+				showFilter(nextFilter);
 			});
 		});
 	</script>
