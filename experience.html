@@ -49,11 +49,10 @@
             background: #8bb02e;
         }
         .accordion-content {
-            display: none;
             background: #fff;
-            color: #333;
+
             padding: 16px 20px;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
         .accordion-item.active .accordion-content {
             display: block;
@@ -74,13 +73,20 @@
             font-weight: 500;
           }
         }
+
+        .section-title {
+          margin-bottom: 2.5rem;
+          padding-bottom: 0.5rem;
+          padding-top: 3rem;
+          border-bottom: 4px solid #A4CC39;
+        }
     </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
     <main>
         <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 40px; width:100%">
-          <h2 style="padding-bottom: 1rem;">Previous roles</h2>
+          <h2 class="section-title">Previous roles</h2>
             <div id="custom-slider-experience" style="width: 100%; max-width: 1280px;"></div>
             <div style="margin-top: 4rem; display: flex; gap:8rem">
               <button style="min-width: 220px;">
@@ -94,7 +100,7 @@
         </section>
 
         <section class="skills-section">
-            <h2 style="text-align:center;margin-bottom:24px;">Skills</h2>
+            <h2 class="section-title" style="text-align:center;margin-bottom:24px;">Skills</h2>
             <div class="accordion">
               <ul style="width: 100%;">
                 <li class="active">
