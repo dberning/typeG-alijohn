@@ -1,5 +1,9 @@
 .documentation-content {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem !important;
+
+  @media (min-width: 768px) {
+    padding: 4rem 2rem;
+  }
 }
 
 .documentation-content ul {
@@ -25,4 +29,43 @@
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+}
+
+.project-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.arrow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #A6CE39;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.arrow-nav:hover {
+  background-color: #8bb92f;
+}
+
+.nav-title {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
