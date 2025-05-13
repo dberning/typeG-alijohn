@@ -1,0 +1,52 @@
+<div class="accordion" id="skills-accordion">
+    <div class="accordion-item">
+        <div class="accordion-title">Penetration Testing</div>
+        <div class="accordion-content" style="display: block;">Experienced in web, network, and application penetration testing using industry-standard tools and methodologies.</div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">Security Architecture</div>
+        <div class="accordion-content" style="display: none;">Designing secure systems and networks, implementing defense-in-depth strategies, and reviewing cloud security postures.</div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">Incident Response</div>
+        <div class="accordion-content" style="display: none;">Developing and executing incident response plans, conducting forensics, and leading post-incident reviews.</div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">Security Training</div>
+        <div class="accordion-content" style="display: none;">Delivering security awareness and technical training to diverse audiences, from executives to engineers.</div>
+    </div>
+</div>
+<script>
+// Accordion functionality
+function init() {
+  console.log('run')
+  var accordion = document.getElementById('skills-accordion');
+  console.log({ accordion })
+  if (!accordion) return;
+  var items = accordion.getElementsByClassName('accordion-item');
+  console.log({ items })
+  for (var i = 0; i < items.length; i++) {
+    (function(index) {
+      var title = items[index].getElementsByClassName('accordion-title')[0];
+      title.addEventListener('click', function() {
+        console.log('open')
+        var content = items[index].getElementsByClassName('accordion-content')[0];
+        var isOpen = window.getComputedStyle(content).display !== 'none';
+        // Collapse all
+        for (var j = 0; j < items.length; j++) {
+          items[j].getElementsByClassName('accordion-content')[0].style.display = 'none';
+        }
+        // Expand if it was closed
+        if (!isOpen) {
+          content.style.display = 'block';
+        }
+      });
+    })(i);
+  }
+};
+window.onload = function() {
+  console.log('init')
+  init();
+};
+console.log('T')
+</script>

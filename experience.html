@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience</title>
+    <link rel="stylesheet" href="css/core.min.css" />
+    <link rel="stylesheet" href="css/skin.css" />
+    <link rel="stylesheet" href="css/timber.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <style>
+        main {
+            background: #f0f0f0;
+            padding-top: 80px
+        }
+        .skills-section {
+            width: 100%;
+            margin: 40px auto;
+            background: #f8f8f8;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .accordion {
+            overflow: hidden;
+            max-width: 1280px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-title {
+            background: #A6CE39;
+            color: #fff;
+            cursor: pointer;
+            padding: 16px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .accordion-title:hover {
+            background: #8bb02e;
+        }
+        .accordion-content {
+            background: #fff;
+
+            padding: 16px 20px;
+            font-size: 1.5rem;
+        }
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+        :root {
+          --active-bg: #A4CC39;
+          --active-bg-hover: #c6CE39;
+        }
+
+        button {
+          background-color: var(--active-bg);
+          text-transform: uppercase;
+
+          > a {
+            color: #fff !important;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+
+        .section-title {
+          margin-bottom: 2.5rem;
+          padding-bottom: 0.5rem;
+          padding-top: 3rem;
+          border-bottom: 4px solid #A4CC39;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 40px; width:100%">
+          <h2 class="section-title">Previous roles</h2>
+            <div id="custom-slider-experience" style="width: 100%; max-width: 1280px;"></div>
+            <div style="margin-top: 4rem; display: flex; gap:8rem">
+              <button style="min-width: 220px;">
+                <a href="path/to/resume.pdf" download>Download Resume</a>
+              </button>
+              <button style="min-width: 220px;">
+                <a href="path/to/linkedin">Linkedin</a>
+              </button>
+
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title" style="text-align:center;margin-bottom:24px;">Skills</h2>
+            <div class="accordion">
+              <ul style="width: 100%;">
+                <li class="active">
+                  <a href="#accordion-1-panel-1">General Security</a>
+                  <div id="accordion-1-panel-1">
+                    <div class="accordion-content" style="display: flex; flex-direction: row; justify-content: space-between;gap: 32px;">
+                      <div style="display: flex; flex-direction: column; width: 30%">
+                        <span style="font-weight: bold;">Penetration testing</span>
+                        <span>• metasploit, msfvenom, SET</span>
+                        <span>• nmap, massscan</span>
+                        <span>• nc, john, tcpdump, psexec, pwdump</span>
+                        <span>• VMWare Fusion</span>
+                      </div>
+                      <div style="display: flex; flex-direction: column; width: 30%">
+                        <span style="font-weight: bold;">Vulnerability assesment</span>
+                        <span>• Nessus</span>
+                        <span>• Nexpose</span>
+                        <span>• Saint</span>
+                      </div>
+                      <div style="display: flex; flex-direction: column; width: 30%">
+                        <span style="font-weight: bold;">Web Applications Penetration testing</span>
+                        <span>• Burp</span>
+                        <span>• Netsparker</span>
+                        <span>• curl, wget, sqlmap</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#accordion-1-panel-2">Network Design</a>
+                  <div id="accordion-1-panel-2">
+                    <div class="accordion-content">
+                      <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#accordion-1-panel-3">System Administration</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+                 <li>
+                  <a href="#accordion-1-panel-3">Web Development</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+                 <li>
+                  <a href="#accordion-1-panel-3">Hardware</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+                 <li>
+                  <a href="#accordion-1-panel-3">Scripting</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+                 <li>
+                  <a href="#accordion-1-panel-3">Certifications</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+                 <li>
+                  <a href="#accordion-1-panel-3">Collaboration</a>
+                  <div id="accordion-1-panel-3">
+                    <div class="accordion-content">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </section>
+        <section style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem 0; width:100%">
+          <button style="min-width: 220px;">
+            <a href="mailto:example@gmail.com">Get in touch</a>
+          </button>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/timber.master.min.js"></script>
+    <script>
+        // Header/footer includes
+        fetch('components/header.html').then(r => r.text()).then(d => { document.getElementById('header-placeholder').innerHTML = d; });
+        fetch('components/footer.html').then(r => r.text()).then(d => { document.getElementById('footer-placeholder').innerHTML = d; });
+
+        //Slider initialization
+        fetch('components/slider.html')
+            .then(r => r.text())
+            .then(d => {
+                document.getElementById('custom-slider-experience').innerHTML = d;
+            });
+    </script>
+</body>
+</html>
