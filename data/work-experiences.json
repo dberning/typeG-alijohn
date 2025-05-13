@@ -1,0 +1,24 @@
+[
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "SENIOR DIRECTOR, SAP",
+    "subtitle": "SOVEREIGN CLOUD TECHNOLOGY AND ENGINEERING",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Responsible for internally developed product, Shared Management Services (SMS), and 13 individuals. Lead team of 7 to support regional security capabilities for engineering, remediation, and compliance. Advise on technical and programmatic security topics for new products, features, and capabilities. Facilitate requests and issues from regional security organizations to 12 product development teams. Manage vendor and product security backlogs.",
+      "Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months. Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months. Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions."
+    ]
+  },
+  {
+    "id": "experience-2",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "TEST TEST",
+    "subtitle": "SOVEREIGN CLOUD TECHNOLOGY AND ENGINEERING",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Responsible for internally developed product, Shared Management Services (SMS), and 13 individuals. Lead team of 7 to support regional security capabilities for engineering, remediation, and compliance. Advise on technical and programmatic security topics for new products, features, and capabilities. Facilitate requests and issues from regional security organizations to 12 product development teams. Manage vendor and product security backlogs.",
+      "Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months. Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months. Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions."
+    ]
+  }
+]

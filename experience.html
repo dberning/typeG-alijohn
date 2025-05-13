@@ -225,36 +225,6 @@
 					data-animate-resize-duration="0">
 					<div class="row">
 						<div class="column width-12">
-							<div class="past custom-layout">
-								<div class="custom-layout-inner">
-									<!-- Left Arrow -->
-									<div class="arrow arrow-left">
-										<span>&lt;</span>
-									</div>
-
-									<!-- Image -->
-									<div class="image-section">
-										<img src="images/portfolio/grid/large-margins/project-2-malware.png" alt="" />
-									</div>
-
-									<!-- Text -->
-									<div class="text-section">
-										<p>
-											Twenty some odd years ago I was born in Southern California and managed to keep my head in a
-											book or in front of a screen since then...
-										</p>
-										<p>
-											Work certainly isn’t everything, reading novels, watching movies, playing some video games
-											rounded out these first few years...
-										</p>
-									</div>
-
-									<!-- Right Arrow -->
-									<div class="arrow arrow-right">
-										<span>&gt;</span>
-									</div>
-								</div>
-							</div>
 							<div class="present custom-layout">
 								<div class="custom-layout-inner">
 									<!-- Left Arrow -->
@@ -262,28 +232,25 @@
 										<span>&lt;</span>
 									</div>
 
-									<!-- Image -->
-									<div class="image-section">
-										<img src="images/about/About_Alijohn_pic.png" alt="" />
+									<div
+										style="display: flex; align-items: flex-start; max-width: 65%; margin: 2rem auto; font-family: 'Gothic A1', sans-serif;">
+										<!-- Logo -->
+										<div style="flex: 0 0 120px; margin-right: 2rem;">
+											<img id="experience-image" src="" alt="experience-logo" style="width: 100%; height: auto;">
+										</div>
+
+										<!-- Text Block -->
+										<div style="flex: 1;">
+											<h3 id="experience-title" style="margin: 0; font-weight: bold; font-size: 1.2rem;"></h3>
+											<p id="experience-subtitle" style="margin: 0.2rem 0 0.5rem 0; color: #88B03B; font-weight: bold;">
+											</p>
+											<p id="experience-location" style="margin: 0 0 1rem 0; color: #000; font-weight: 500;"></p>
+
+											<p id='experience-text' style="line-height: 1.5;">
+											</p>
+										</div>
 									</div>
 
-									<!-- Text -->
-									<div class="text-section">
-										<p>
-											Twenty some odd years ago I was born in Southern California and managed to keep my head in a book
-											or in-front of a screen since then. High school came and went with relative ease. There wasn’t a
-											moment wasted, time was spent forming and attending various clubs (chess, tech, french, political,
-											anime). These functions provided an avenue to develop my interests and skills in web development
-											which ultimately lead to some small technical contracts. Subsequently, some of the contracts
-											turned into consistent clients.
-										</p>
-										<p>
-											Work certainly isn’t everything, reading novels, watching movies, playing some video games rounded
-											out these first few years. With interests in mysteries/puzzles and technology, complimented by a
-											deep passion for technology lead to the modification of game data (player progress, unlimited
-											money, etc) and disassembly of any and all hardware.
-										</p>
-									</div>
 
 									<!-- Right Arrow -->
 									<div class="arrow arrow-right">
@@ -557,35 +524,6 @@
 	</script>
 
 	<script>
-		$(document).ready(function () {
-			// Hide all initially
-			$('.custom-layout').hide();
-			$('.custom-layout.present').show();
-
-			function showFilter(filterClass) {
-				// Show/hide content
-				$('.custom-layout').hide();
-				$(filterClass).show();
-
-				// Update active class on filter menu
-				$('[data-filter]').removeClass('active');
-				$(`[data-filter="${filterClass}"]`).addClass('active');
-			}
-
-			// Filter menu click
-			$('[data-filter]').click(function (e) {
-				e.preventDefault();
-				const filter = $(this).data('filter');
-				showFilter(filter);
-			});
-
-			// Arrow click toggles between views
-			$('.arrow').click(function () {
-				const nextFilter = $('.custom-layout.present').is(':visible') ? '.past' : '.present';
-				showFilter(nextFilter);
-			});
-		});
-
 		function downloadResume() {
 			const link = document.createElement('a');
 			link.href = 'mediaelement/Alijohn-Ghassemlouei-Resume-2024-February.pdf';
@@ -595,6 +533,46 @@
 			document.body.removeChild(link);
 		}
 	</script>
+
+	<script>
+		let experiences = [];
+		let currentIndex = 0;
+
+		function renderExperience(index) {
+			const exp = experiences[index];
+			document.getElementById('experience-image').src = exp.image;
+
+			const textSection = document.getElementById('experience-text');
+			textSection.innerHTML = exp.paragraphs.map(p => `<p>${p}</p>`).join('');
+
+			const titleSection = document.getElementById('experience-title');
+			titleSection.innerText = exp.title;
+
+			const subtitleSection = document.getElementById('experience-subtitle');
+			subtitleSection.innerText = exp.subtitle;
+
+			const locationSection = document.getElementById('experience-location');
+			locationSection.innerText = exp.location;
+		}
+
+		function changeExperience(direction) {
+			console.log(direction);
+			currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+			renderExperience(currentIndex);
+		}
+
+		fetch('data/work-experiences.json')
+			.then(response => response.json())
+			.then(data => {
+				experiences = data;
+				console.log(experiences);
+				renderExperience(currentIndex);
+
+				document.querySelector('.arrow-left').addEventListener('click', () => changeExperience(-1));
+				document.querySelector('.arrow-right').addEventListener('click', () => changeExperience(1));
+			});
+	</script>
+
 
 </body>
 
