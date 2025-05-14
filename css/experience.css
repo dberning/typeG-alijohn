@@ -126,3 +126,37 @@
     text-align: center;
   }
 }
+
+/* Default styling for skills-section (already using row layout) */
+.skills-section .accordion-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Responsive overrides */
+@media screen and (max-width: 768px) {
+  .skills-section {
+    margin: 3rem 1.5rem !important;
+    /* Reduce margin on small screens */
+  }
+
+  .skills-section .accordion-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills-section .accordion-content>div {
+    width: 100% !important;
+  }
+
+  .skills-section .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .accordion ul {
+    padding: 0;
+  }
+}
