@@ -2,23 +2,156 @@
   {
     "id": "experience-1",
     "image": "images/about/About_Alijohn_pic.png",
-    "title": "SENIOR DIRECTOR, SAP",
-    "subtitle": "SOVEREIGN CLOUD TECHNOLOGY AND ENGINEERING",
+    "title": "Senior Director",
+    "subtitle": "Sovereign Cloud Technology and Engineering",
     "location": "Reston, Virginia / Remote",
     "paragraphs": [
       "Responsible for internally developed product, Shared Management Services (SMS), and 13 individuals. Lead team of 7 to support regional security capabilities for engineering, remediation, and compliance. Advise on technical and programmatic security topics for new products, features, and capabilities. Facilitate requests and issues from regional security organizations to 12 product development teams. Manage vendor and product security backlogs.",
-      "Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months. Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months. Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions."
+      "Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months.",
+      "Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months.",
+      "Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions."
     ]
   },
   {
-    "id": "experience-2",
+    "id": "experience-1",
     "image": "images/about/About_Alijohn_pic.png",
-    "title": "TEST TEST",
-    "subtitle": "SOVEREIGN CLOUD TECHNOLOGY AND ENGINEERING",
+    "title": "Director",
+    "subtitle": "Research and Development Build Engineering",
     "location": "Reston, Virginia / Remote",
     "paragraphs": [
-      "Responsible for internally developed product, Shared Management Services (SMS), and 13 individuals. Lead team of 7 to support regional security capabilities for engineering, remediation, and compliance. Advise on technical and programmatic security topics for new products, features, and capabilities. Facilitate requests and issues from regional security organizations to 12 product development teams. Manage vendor and product security backlogs.",
-      "Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months. Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months. Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions."
+      "Lead team of 35+ individuals, organized into five teams, managing two internally redesigned products, SAP Integrated Business Planning (IBP) and S/4HANA Private Cloud Edition (PCE) and one internally developed product Shared Management Services (SMS). Planned and forecasted capabilities for product roadmap with internal stakeholders.",
+      "Recovered multi-year business critical project within three months and expanded capabilities within additional two. Organized and managed product development, hardening, automation, and provisioning to deploy into three public cloud providers within five months. Assisted in deployment, hardening, and assessment of two SAAS and one PAAS offerings which achieved FedRAMP Moderate accreditation. Grew team from 5 to 25 individuals through weekly coaching and mentorship.",
+      "Established recruitment process, processed over 380 candidates, and transitioned process to recruitment team of five. Established and maintained strategic relationships with GitLab, Red Hat, AWS, SUSE, and Microsoft to drive collaboration and improve over 89 product gaps and features. Organized and maintained hardware purchases for 50 individuals across engineering teams. Established and transitioned image creation pipeline which grew to encompass AWS Commercial, AWS GovCloud, Azure Commercial, Azure Government, and GCP Assured Workloads.",
+      "Saved over 4.8 million (USD) through pursuit of open source solutions, infrastructure automation, elimination of redundant capabilities, and ephemeral development infrastructure."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Cyber Security Subject Matter Expert",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Assisted in leading security engineering team of 4-5 to maintain security tooling. Analyzed vulnerabilities on a weekly basis to assist compliance and operations teams for remediation activities. Supported monthly continuous monitoring reporting requirements and annual third-party assessments for FEDRAMP high-accredited systems.",
+      "Improved security posture by increasing accuracy of vulnerability results through redefinition of scan policies/frequency, encouraging proactive remediation in cultural shift, and teaching. Led multi-team effort on in-depth analysis of adherence to DISA STIGS for RHEL7. Increased efficiency of evidence collection through Splunk search normalization for annual security assessments.",
+      "Led efforts to replicate CMDB capabilities through Splunk searches thereby removing manually generated inventories and monthly reports. Assisted in automation of monthly web application scans through PowerShell. Redeployed Tenable Nessus, Tenable Security Center, and Microfocus WebInspect across multiple air-gapped security boundaries on newer platforms to ensure more consistent management.",
+      "Organized, restructured, and implemented efficient processes and methodologies for tooling configuration and onboarding activities."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Information Security Consultant",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Communicated complex technical concepts to stakeholders of various backgrounds. Analyzed client issues and created practical solutions. Lead risk assessments, gap analyses, and vendor security assessments. Worked on long-term strategic projects with Fortune 50 companies. Analyzed requested evidence and interviewed stakeholders to identify gaps. Leveraged CIS 20, NIST 800-171, NIST 800-53, and PCI DSS 3.0, and HIPPA Security Rule frameworks. Drafted executive roadmaps, reports, and outbrief presentations. Optimized and formalize existing internal processes.",
+      "Lead a two-person, six month, vulnerability management engagement for a 6.2 million customer ISP. Conducted HIPPA Security Rule audit for leading health insurance agency. Managed three month vendor security assessment for a multinational technology company. Lead a team of five on a access control assessment using client’s agile process and provided complete transparency on project progress.",
+      "Oversaw a team of five on a complex multi-business unit assessment for a single client. Interfaced with potential clients to communicate security assessment processes during pre-sales meetings. Automated manual data analysis and manipulation process from five days to less than five minutes.",
+      "Reviewed business contracts to identify potential legal risk due to known technical gaps. Created sales presentations, scoping templates, detailed delivery guides, dynamic reports, outbriefs, and templates for Vulnerability Management and CIS 20 engagements. Brought potential client to consultancy due to outstanding work on another engagement."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Penetration Tester",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Assesses all first party published titles with online functionality across America, Europe, and Japan. Conducts security assessments on titles, internal and mobile applications, and backend infrastructure. Coordinates all assessment related activities including meetings, dates, data collection, escalation and outbriefs. Maintains good working relationships with studio producers, developers, and respective system administrators. Keeps up to date with latest PlayStation hacking tools and methodologies.",
+      "Conducts vulnerability assessments, penetration tests, and architecture reviews. Manages vulnerability discovery for 9,000+ hosts. Coordinates vulnerability mitigation, remediation, and acceptance efforts through tickets within JIRA and WebRT trackers along with formal documents.",
+      "Created internal web presence through Sharepoint site, JIRA tracker, Confluence wiki, and DevTrack project. Centralized and pruned all existing information into filers, website, wiki, and project. Identified and maintained target list for internal and external assets. Deployed Tenable Security Center with assistance from Systems and Network engineering teams. Designed department brand and identity and created tailored instructional Security Center videos in conjunction with internal L&D team.",
+      "Established thorough and well documented assessment methodology. Communicated processes through formal documents, presentations, websites, and wiki's. Identified systemic issues, formalized remediation actions, and raised issues to management regularly."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Vulnerability Analyst / Penetration Tester",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Lead team of 2-5 to perform penetration, vulnerability, and red team assessments, attacking a diverse range of international classified and unclassified hosts and operating systems. Emulation of current adversarial threats through commonly available tools and methodologies.",
+      "Identification of vulnerabilities, weak security controls, and potential mitigations for the federal client. Evaluated configuration of target Linux, Unix, and Windows systems. Contributed in technical post-review report generation for federal, contractor staff, and management by contributing raw technical data summaries of specific items and providing in-depth analysis of all information gathered. Provided direction for future assessments.",
+      "Organized, restructured, and implemented more efficient team processes and methodologies. Defined terms within team and refocused efforts for better results. Created scoping metrics for site assessment selection."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Cyber Security Specailist & Architect",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Administers networks and Linux/Unix systems of penetration testing lab. Performs penetration testing in teams of 3-6, attacking a diverse range of classified and unclassified hosts and operating systems using such tools as Nessus, SAINT, Netsparker, Metasploit, and Nmap. Evaluates configuration of target Linux, Unix, and Windows systems.",
+      "Assists in technical post-review report generation for federal and contractor staff and management by contributing raw technical data summaries of specific items and providing in-depth analysis of all information gathered. Creates and manages virtual attack platforms as a part of laptop image management. Directs software and hardware purchases for penetration testing team.",
+      "Presents technical demonstrations and briefings to U.S. congressmen, top-level DOE officials, and DOE security conference attendees. Completely reimplemented an existing BSD firewall and bridge with a streamlined ruleset syntax designed for maximal efficiency.",
+      "Excised unnecessary equipment, consolidated hardware, and rewired the network and power for the entire internal lab. Redesigned RSA SecurID appliances system to bolster security. Consolidated hardware via hardware clustering and virtualized 90% of the lab by implementing VMWare ESXi."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Adjunct Associate Professor",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Instructed class of 23 students in a high level network security course [Securing a Network NTS412] within an undergraduate program for a private university. Addressed student concerns and questions on daily basis. Provided in-depth technical feedback for all assignments and summarized justifications for grades. Temporarily assist in the instruction of a scripting for hackers course.",
+      "Measured, monitored student capabilities and adjusted course content accordingly. Developed ten out of fifteen weeks of interactive, scenario based, hands-on course material that takes a more holistic approach to network security (network diagram creation, packet capture analysis, network segmentation, windows and linux system hardening, security policy generation, Cisco IOS router and firewall configuration, IDS and IPS placement and configuration, wireless access point deployment, etc)"
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Technical Consultant",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Interfaces with home users, small businesses, and large corporations on a regular basis to provide customer support and assistance in using their computers. Develops websites with technologies ranging from custom HTML and PHP to Flash and Wordpress skinning. Subcontracts side work to trusted professionals, and also negotiates contracting fees. Volunteers weekly to teach essential computer skills such as internet navigation, word processing and information security awareness to the elderly, underpriveleged, and other members of the public interested in learning more about computer use.",
+      "Provides technical instruction to clients on various topics which vary in complexity from simple computer usage to advanced penetration testing. Repairs and maintains physical computer hardware of desktops and laptops such as component upgrades and data recovery from failed and failing hard drives. Diagnoses and resolves technical issues remotely to provide immediate, efficient, and effective solutions."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Senior Techical Conference Associate",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Coordinates tasks and delegates responsibilities for other volunteers. Leads setup and tear-down of power/network cabling throughout entire conference. Deploys network infrastructure to hotel network closets and conference training rooms. Monitors training and briefings network traffic. Diagnoses anomalies network activity and outages. Enforces physical security in order to prevent unauthorized persons from gaining access to the conference.",
+      "Assists and directs attendees to appropriate locations. Assisted speakers through timekeeping and navigation to speaking locations. Organized and displayed inventory of Black Hat store. Streamlined conference bag assembly line. Devised efficient methodology tape-down of cabling. Introduced speakers to the audience. Black Hat USA volunteer since 2008; Black Hat DC volunteer since 2010."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Chief Financial Officer",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Lead an initiative to increase company efficiency and communication by scheduling board meetings, and documented these meetings for future use and reference. Built and maintained a consistent corporate identity through logo, website, business cards, and letterheads. Provided analysis and advice on financial investments and prospective projects with a focus on viability and profit."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "System & Network Administrator",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Generated and maintained detailed software inventory in order to prevent misappropriation of company assets. Regularly interfaced with design and office staff to resolve general computer issues. Researched and drafted proposals to implement new technologies including Apple hardware such as storage area networks and other backup solutions. Helped to devise a method for indexing, archiving, and backing up a large and constantly-updated collection of photographs.",
+      "Updated, patched, and organized entire network. Deployed unified patch and remote management system for both OS X and Windows. Standardized workstation builds for more efficient management. Joined OS X machines to Active Directory via Open Directory allowing granular user restrictions for settings, backups, power savings plans, and other configuration features. Produced a migration plan for virtualization of core infrastructure with warm offsite backup."
+    ]
+  },
+  {
+    "id": "experience-1",
+    "image": "images/about/About_Alijohn_pic.png",
+    "title": "Web Developer",
+    "subtitle": "Research and Development Build Engineering",
+    "location": "Reston, Virginia / Remote",
+    "paragraphs": [
+      "Maintained website and content to meet the needs of the client, including hosting details and custom domain redirection. Increased website profitability and exposure with simple SEO. Advised on equipment purchases for internal servers, workstations, and software to ensure easier management and decreased maintenance and replacement costs. Provided on-call troubleshooting for various hardware and software issues via phone and internet.",
+      "Upgraded simple HTML website to dynamic JavaScript-based website in order to facilitate faster load times and easier content management. Developed complete Flash website with custom backend upload tool for easy site updating in order to provide a competitive edge against rival businesses."
     ]
   }
 ]
