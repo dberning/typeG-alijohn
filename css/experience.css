@@ -1,0 +1,162 @@
+.custom-layout .custom-layout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.image-section img {
+  height: auto;
+  display: block;
+}
+
+.text-section {
+  max-width: 400px;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+.arrow {
+  background-color: #A6CE39;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow-left {
+  margin-right: 1rem;
+}
+
+.arrow-right {
+  margin-left: 1rem;
+}
+
+#logo {
+  margin: 1rem 0;
+
+  @media (min-width: 768px) {
+    flex: 0 0 120px;
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-block.grid-filter-menu {
+    padding-bottom: 0 !important;
+  }
+
+  .custom-layout .custom-layout-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .text-section {
+    max-width: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .arrow {
+    display: none;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    margin: 0 auto;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+  }
+}
+
+.custom-layout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-layout-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-layout-inner .arrow {
+    margin: 1rem 0;
+  }
+
+  .custom-layout-inner>div[style*="max-width: 65%"] {
+    flex-direction: column !important;
+    max-width: 100% !important;
+    margin: 1rem 0 !important;
+    max-height: none !important;
+    min-height: auto !important;
+  }
+
+  .custom-layout-inner>div[style*="flex: 0 0 120px"] {
+    margin: 0 0 1rem 0 !important;
+  }
+
+  .custom-layout-inner #experience-text {
+    text-align: center;
+  }
+}
+
+/* Default styling for skills-section (already using row layout) */
+.skills-section .accordion-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Responsive overrides */
+@media screen and (max-width: 768px) {
+  .skills-section {
+    margin: 3rem 1.5rem !important;
+    /* Reduce margin on small screens */
+  }
+
+  .skills-section .accordion-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills-section .accordion-content>div {
+    width: 100% !important;
+  }
+
+  .skills-section .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .accordion ul {
+    padding: 0;
+  }
+}

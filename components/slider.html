@@ -1,0 +1,60 @@
+<style>
+    swiper-container {
+      width: 100%;
+      height: auto;
+
+      &::part(button-next), &::part(button-prev) {
+        background-color: var(--active-bg);
+        padding: 15px 20px 15px 20px;
+      }
+      &::part(button-next):hover, &::part(button-prev):hover {
+        background-color: var(--active-bg-hover);
+      }
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 800px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+</style>
+
+<swiper-container
+  class="mySwiper"
+  navigation="true"
+  style="
+    --swiper-navigation-color: #FFFFFF;
+    --swiper-navigation-size: 25px;"
+>
+  <swiper-slide><div style="display: flex; justify-content: flex-start; align-items: flex-start; padding: 120px; gap: 32px; flex-direction: row;">
+    <img style="width: 200px;" src="images/logos/sap.png" alt="sap" />
+    <div style="flex: 5; display: flex; flex-direction: column; gap: 0.25rem; align-items: flex-start;">
+      <span style="font-size: 2rem; font-weight: bold;">SENIOR DIRECTOR, SAP</span>
+      <span style="font-size: 1.5rem; font-weight: bold; color: #A6CE39;">SOVEREIGN CLOUD TECHNOLOGY AND ENGINEERING</span>
+      <span style="font-size: 1.5rem; font-weight: bold; padding-bottom: 1rem">Reston, Virginia / Remote</span>
+      <span style="text-align: justify;">Responsible for internally developed product, Shared Management Services (SMS), and 13 individuals. Lead team of 7 to support regional security capabilities for engineering, remediation, and compliance. Advise on technical and programmatic security topics for new products, features, and capabilities. Facilitate requests and issues from regional security organizations to 12 product development teams. Manage vendor and product security backlogs.
+
+Supported transfer of responsibility and ownership of four teams to other managers as part of a transfer, from subsidiary to parent company, with a 95% retention rate. Coordinated the deployment of internal monolithic solution with 22 services into two regions concurrently within four months. Improved understanding of complex technical topics through creation of enablement materials e.g., documents, presentations, and videos. Established security organization with 13 unique services within the Technology and Engineering organization, consolidating global functions, for a new line of business within six months. Reduced operational burden for infrastructure and application management for log ingestion, log correlation, vulnerability management, and web application scanning globally across four countries. Developed dynamically updating security roadmap to support new line of business responsible for 12 SAP solutions.</span>
+    </div>
+  </div></swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  <swiper-slide>Slide 4</swiper-slide>
+  <swiper-slide>Slide 5</swiper-slide>
+  <swiper-slide>Slide 6</swiper-slide>
+  <swiper-slide>Slide 7</swiper-slide>
+  <swiper-slide>Slide 8</swiper-slide>
+  <swiper-slide>Slide 9</swiper-slide>
+</swiper-container>
