@@ -358,11 +358,28 @@
 	</script>
 
 	<script>
-		// Load header.html into the placeholder
 		fetch('header.html')
 			.then(response => response.text())
 			.then(data => {
 				document.getElementById('header-placeholder').innerHTML = data;
+
+				// Get the current file name from the URL
+				const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+				// Find all nav links in the header
+				const navLinks = document.querySelectorAll('#header-placeholder nav a');
+
+				navLinks.forEach(link => {
+					const linkPath = link.getAttribute('href');
+
+					// Match current page and add class to parent <li>
+					if (linkPath === currentPath) {
+						const li = link.closest('li');
+						if (li) {
+							li.classList.add('current');
+						}
+					}
+				});
 			});
 	</script>
 
