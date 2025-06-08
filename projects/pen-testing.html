@@ -70,7 +70,7 @@
 													style="display: flex; justify-content: center; margin-left: 35%; margin-right: 35%; border-top: 2px solid #A6CE39;">
 												<h1 class="tms-caption title-xlarge color-white lspacing-medium" style="margin-bottom: 0px;"
 													data-animate-in="preset:scaleOut;duration:1000ms;" data-no-scale>
-													WRCCDC DOCUMENTATION OR IPSUM LOREM QUOTE?
+													The Art & Science of Federal Penetration Testing
 												</h1>
 												<hr
 													style="display: flex; justify-content: center; margin-left: 35%; margin-right: 35%; border-top: 2px solid #A6CE39;">
@@ -107,10 +107,14 @@
 				<!-- Documentation Content Section -->
 				<section class="section-block documentation-content" style="background-color: white !important;">
 					<div class="row">
-						<div class="column width-6">
-							<h4>WRCCDC DOCUMENTATION</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-							<p>Duis autem vel eum iriure dolor in hendrerit...</p>
+						<div class="column width-8" style="padding: 0 10rem 0 0;">
+							<h4>DOCUMENTATION</h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+								laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+								ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+								dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+								luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 							<ul>
 								<li>CIS 20 Assessments</li>
 								<li>Vulnerability Management</li>
@@ -121,7 +125,7 @@
 								<li>Offensive Cyber Techniques</li>
 							</ul>
 						</div>
-						<div class="column width-6">
+						<div class="column width-4">
 							<div class="placeholder-box"></div>
 							<div class="placeholder-box"></div>
 						</div>
@@ -223,6 +227,13 @@
 
 				navLinks.forEach(link => {
 					const linkPath = link.getAttribute('href');
+					if (linkPath === '#') {
+						console.log(window.location.origin.split('#')[0] + '/index.html')
+						link.href = window.location.origin.split('#')[0] + '/index.html';
+					} else {
+						link.href = window.location.origin + '/' + linkPath;
+					}
+					console.log(link.href);
 
 					// Match current page and add class to parent <li>
 					if (linkPath === currentPath) {
