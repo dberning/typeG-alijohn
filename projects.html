@@ -123,7 +123,7 @@
 								<div class="grid-item grid-sizer pen-testing">
 									<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
 										data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.1">
-										<a class="overlay-link" href="portfolio/clothing.html">
+										<a class="overlay-link" href="projects/pen-testing.html">
 											<img src="images/portfolio/grid/large-margins/project-1-pen-testing-1.png" alt="" />
 											<span class="overlay-info" style="opacity: 1; padding: 0 5%">
 												<span>
@@ -216,19 +216,6 @@
 				</div>
 				<!-- Portfolio Grid Section End -->
 
-				<!-- Past Clients Start -->
-				<div class="section-block grid-filter-menu no-padding-top center"
-					style="padding-top: 0px !important; background-color: white;">
-					<div class="row no-padding">
-						<div class="column width-12">
-							<h2 class=" mb-30 gothic case-studies-header" style="margin-top: 5%;">
-								Trusted Clients</h2>
-						</div>
-						<img src="images/logos/clients-transparent.png" />
-					</div>
-				</div>
-				<!-- Past Clients End -->
-
 				<!-- Questions -->
 				<div class="section-block grid-filter-menu no-padding-top center"
 					style="padding-top: 0px !important; background-color: white; padding: 5rem 0 !important">
@@ -239,8 +226,8 @@
 								HAVE QUESTIONS? LET’S TALK</h2> -->
 						</div>
 						<button class="gothic-league" style="background-color: #A6CE39; color: white; text-transform: uppercase;"
-							onclick="location.href='about.html'">
-							See Background
+							onclick="location.href='contact.html'">
+							Get In Touch
 						</button>
 					</div>
 				</div>
@@ -270,55 +257,32 @@
 				document.getElementById('footer-placeholder').innerHTML = data;
 			});
 	</script>
-	fetch('header.html')
-	.then(response => response.text())
-	.then(data => {
-	document.getElementById('header-placeholder').innerHTML = data;
 
-	// Get the current file name from the URL
-	const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+	<script>
+		fetch('header.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('header-placeholder').innerHTML = data;
 
-	// Find all nav links in the header
-	const navLinks = document.querySelectorAll('#header-placeholder nav a');
+				// Get the current file name from the URL
+				const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
-	navLinks.forEach(link => {
-	const linkPath = link.getAttribute('href');
+				// Find all nav links in the header
+				const navLinks = document.querySelectorAll('#header-placeholder nav a');
 
-	// Match current page and add class to parent <li>
-		if (linkPath === currentPath) {
-		const li = link.closest('li');
-		if (li) {
-		li.classList.add('current');
-		}
-		}
-		});
-		});
-		</script>
-		<script>
-			fetch('header.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('header-placeholder').innerHTML = data;
+				navLinks.forEach(link => {
+					const linkPath = link.getAttribute('href');
 
-					// Get the current file name from the URL
-					const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-
-					// Find all nav links in the header
-					const navLinks = document.querySelectorAll('#header-placeholder nav a');
-
-					navLinks.forEach(link => {
-						const linkPath = link.getAttribute('href');
-
-						// Match current page and add class to parent <li>
-						if (linkPath === currentPath) {
-							const li = link.closest('li');
-							if (li) {
-								li.classList.add('current');
-							}
+					// Match current page and add class to parent <li>
+					if (linkPath === currentPath) {
+						const li = link.closest('li');
+						if (li) {
+							li.classList.add('current');
 						}
-					});
+					}
 				});
-		</script>
+			});
+	</script>
 </body>
 
 </html>
