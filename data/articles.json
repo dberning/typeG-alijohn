@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Article 01",
+    "category": "",
+    "image": "images/articles/article-1.png",
+    "description": "Loirem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link": "articles/article-1.html"
+  },
+  {
+    "title": "Article 02",
+    "category": "",
+    "description": "Loirem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "images/articles/article-2.png",
+    "link": "articles/article-2.html"
+  },
+  {
+    "title": "Article 03",
+    "category": "",
+    "description": "Loirem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "images/articles/article-3.png",
+    "link": "articles/article-3.html"
+  },
+  {
+    "title": "Article 04",
+    "category": "",
+    "description": "Loirem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "images/articles/article-4.png",
+    "link": "articles/article-4.html"
+  }
+]
