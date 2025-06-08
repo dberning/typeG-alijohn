@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Art & Science of Federal Penetration Testing",
+    "category": "pen-testing",
+    "image": "images/projects/grid/large-margins/pen-testing.png",
+    "link": "projects/pen-testing.html"
+  },
+  {
+    "title": "PROACTIVE MALWARE PREVENTION",
+    "category": "malware",
+    "image": "images/projects/grid/large-margins/malware.png",
+    "link": "projects/malware.html"
+  },
+  {
+    "title": "CDC DOCUMENTATION",
+    "category": "cdc",
+    "image": "images/projects/grid/large-margins/cdc.png",
+    "link": "projects/cdc.html"
+  },
+  {
+    "title": "WRCCDC DOCUMENTATION",
+    "category": "wrccdc",
+    "image": "images/projects/grid/large-margins/wrccdc.png",
+    "link": "projects/wrccdc.html"
+  },
+  {
+    "title": "OFFENSIVE CYBER TECHNIQUES",
+    "category": "offensive-sec",
+    "image": "images/projects/grid/large-margins/offensive-sec.png",
+    "link": "projects/offensive-sec.html"
+  },
+  {
+    "title": "AMBIGUITY IS INSECURITY",
+    "category": "ambiguity",
+    "image": "images/projects/grid/large-margins/ambiguity.png",
+    "link": "projects/ambiguity.html"
+  }
+]

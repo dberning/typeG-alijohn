@@ -1388,7 +1388,8 @@ img.pull-right,
 .thumbnail {
   margin-bottom: 3rem;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  background-color: #cccccc;
 }
 
 .thumbnail.rounded,
