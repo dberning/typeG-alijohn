@@ -12,6 +12,10 @@
 }
 
 .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  height: 100%;
   max-width: 400px;
   font-size: 1.75rem;
   line-height: 1.6;
