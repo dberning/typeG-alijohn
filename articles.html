@@ -213,29 +213,36 @@
 	</script>
 
 	<script>
-		fetch('header.html')
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById('header-placeholder').innerHTML = data;
+		async function loadHeaderAndInitTimber() {
+			const res = await fetch("components/header.html");
+			const html = await res.text();
+			document.getElementById("header-placeholder").innerHTML = html;
 
-				// Get the current file name from the URL
-				const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+			// Get the current file name from the URL
+			const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
-				// Find all nav links in the header
-				const navLinks = document.querySelectorAll('#header-placeholder nav a');
+			// Find all nav links in the header
+			const navLinks = document.querySelectorAll('#header-placeholder nav a');
 
-				navLinks.forEach(link => {
-					const linkPath = link.getAttribute('href');
+			navLinks.forEach(link => {
+				const linkPath = link.getAttribute('href');
 
-					// Match current page and add class to parent <li>
-					if (linkPath === currentPath) {
-						const li = link.closest('li');
-						if (li) {
-							li.classList.add('current');
-						}
+				// Match current page and add class to parent <li>
+				if (linkPath === currentPath) {
+					const li = link.closest('li');
+					if (li) {
+						li.classList.add('current');
 					}
-				});
+				}
 			});
+
+			// Timber must be loaded AFTER header is injected
+			const script = document.createElement("script");
+			script.src = "js/timber.master.min.js";
+			document.body.appendChild(script);
+		}
+
+		loadHeaderAndInitTimber();
 	</script>
 
 </body>
