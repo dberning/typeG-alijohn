@@ -15374,3 +15374,15 @@ body.boxed .blog-masonry.full-width [class*="content-grid"] {
     top: 0
   }
 }
+
+.logo {
+  width: 50% !important;
+  max-width: 25rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 20% !important;
+    max-width: 30rem;
+  }
+}
